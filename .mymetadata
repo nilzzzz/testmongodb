@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="testmongodb"
+  id="myeclipse.1380249941322"
+  context-root="/testmongodb"
+  j2ee-spec="5.0"
+  archive="testmongodb.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

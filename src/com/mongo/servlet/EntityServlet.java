@@ -25,19 +25,19 @@ public class EntityServlet extends HttpServlet {
 		try {
 			List list=new EntityTest().selectAll();
 			response.setCharacterEncoding("UTF-8");
-			System.out.println(JSONArray.fromObject(list).toString());
+			//System.out.println(JSONArray.fromObject(list).toString());
 			//使用JSONArray再次转换
 //   		response.getWriter().write(JSONArray.fromObject(list).toString());
 //			response.getWriter().write(JSONArray.fromObject(list).toString());
 			
 		    //直接把list输出，数组形式，前台使用d[索引].属性
-			response.getWriter().write(list.toString());
+		//	response.getWriter().write(list.toString());
 
 			//不以数组形式，前台使用d.属性
 //			response.getWriter().write(list.get(0).toString());
 
 	        //主要用于ligerui的grid形式，默认是rows
-//			initJsonList(request,response,list);
+ 		initJsonList(request,response,list);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -15,6 +15,7 @@ import com.mongodb.Mongo;
 public class EntityTest {
     
      public static void main(String[] args) throws Exception{
+    	 saveEntity();
     	 selectAll();
      }
     
@@ -216,9 +217,5 @@ public class EntityTest {
           while(cursor1.hasNext()){
                System.out.println(cursor1.next());
           }
-         
-    
      }
-    
-    
 }

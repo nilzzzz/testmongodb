@@ -53,7 +53,7 @@ var grid1=null;
 				//alert(d.Rows[1].name);
 				
 				//动态生成table
-			    var　mongotable='<table id="tablelist"></table>';
+			    var mongotable='<table id="tablelist"></table>';
 			    $(mongotable).appendTo("#testtable"); 
 			    
 				for(var o in d){
